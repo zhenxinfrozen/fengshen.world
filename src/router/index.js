@@ -10,6 +10,7 @@ import Characters from '../pages/characters/Characters.vue'
 import JiangZiya from '../pages/characters/JiangZiya.vue'
 import Daji from '../pages/characters/Daji.vue'
 import Artifacts from '../pages/artifacts/Artifacts.vue'
+import Guestbook from '../pages/Guestbook.vue'
 
 const routes = [
   { path: '/', name: 'Home', component: Home },
@@ -22,7 +23,8 @@ const routes = [
   { path: '/characters', name: 'Characters', component: Characters },
   { path: '/characters/jiangziya', component: JiangZiya },
   { path: '/characters/daji', component: Daji },
-  { path: '/artifacts', name: 'Artifacts', component: Artifacts }
+  { path: '/artifacts', name: 'Artifacts', component: Artifacts },
+  { path: '/guestbook', name: 'Guestbook', component: Guestbook }
 ]
 
 const router = createRouter({
