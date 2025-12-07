@@ -1,1 +1,5 @@
-/* /index.html 200
+/guestbook / 200
+/wiki/* / 200
+/stories/* / 200
+/characters/* / 200
+/artifacts/* / 200
