@@ -6,9 +6,9 @@
 
 项目演示（UI 预览）
 
-![fengshen UI 1](src\assets\img\ui\fengshen-UI-screenshot-demo01.png)
+![fengshen UI 1](src/assets/img/ui/fengshen-UI-screenshot-demo01.png)
 
-![fengshen UI 2](src\assets\img\ui\fengshen-UI-screenshot-demo02.png)
+![fengshen UI 2](src/assets/img/ui/fengshen-UI-screenshot-demo02.png)
 
 主要特性
 
