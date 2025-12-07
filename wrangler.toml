@@ -1,0 +1,8 @@
+name = "fengshen"
+compatibility_date = "2024-01-01"
+pages_build_output_dir = "./dist"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "fengshen-db"
+database_id = "342168ad-6a46-4727-8a93-34f81e2ef206"
