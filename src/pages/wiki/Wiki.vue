@@ -9,10 +9,17 @@
 
     <h2 id="characters">主要封神人物</h2>
     <p>此处列出重要角色与简介，便于快速跳转和检索。</p>
-    <img src="/assets/img/project-UI/fengshen-UI-02.png" alt="封神画卷" style="max-width:100%; border-radius:6px;" />
+    <img :src="wikiImg" alt="封神画卷" style="max-width:100%; border-radius:6px;" />
   </div>
 </template>
 
 <script>
-export default { name: 'Wiki' }
+import wikiImg from '@/assets/img/ui/fengshen-UI-02.png'
+
+export default { 
+  name: 'Wiki',
+  data() {
+    return { wikiImg }
+  }
+}
 </script>

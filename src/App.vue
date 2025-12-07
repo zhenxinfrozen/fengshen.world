@@ -2,7 +2,7 @@
   <div id="app">
     <header class="topbar full">
       <div class="topbar-left">
-        <img class="topbar-logo" src="/assets/img/project-UI/fengshen-logo.png" alt="logo" />
+        <img class="topbar-logo" src="@/assets/img/ui/fengshen-logo.png" alt="logo" />
         <span class="topbar-title">fengshen.world</span>
       </div>
       <div class="topbar-right">
@@ -63,8 +63,6 @@
 <script>
 import { ref, onMounted } from 'vue'
 import menu from './data/menu.js'
-import img1 from '/assets/img/compressed/fengshen-UI-01-cut.webp'
-import img2 from '/assets/img/compressed/fengshen-UI-02.webp'
 
 export default {
   name: 'App',
@@ -89,7 +87,7 @@ export default {
       openGroups.value[id] = !openGroups.value[id]
     }
 
-    return { menuOpen, toggle, openGroups, toggleGroup, img1, img2, menu }
+    return { menuOpen, toggle, openGroups, toggleGroup, menu }
   }
 }
 </script>

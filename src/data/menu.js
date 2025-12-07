@@ -3,10 +3,9 @@ export default [
     id: 'wiki',
     title: 'Wiki',
     children: [
-  // homepage overview anchor (points to wiki overview)
-  { path: '/wiki#overview', title: 'Overview' },
-      { path: '/wiki/requirements', title: 'Requirements' },
-      { path: '/wiki/installation', title: 'Installation' }
+      { path: '/wiki', title: 'Overview' },
+      { path: '/wiki/worldview', title: '世界观设定' },
+      { path: '/wiki/timeline', title: '时间线' }
     ]
   },
   {
@@ -14,7 +13,8 @@ export default [
     title: 'Stories',
     children: [
       { path: '/stories', title: 'Important Stories' },
-      { path: '/stories/tianming', title: '天命之争' }
+      { path: '/stories/tianming', title: '天命之争' },
+      { path: '/stories/muye', title: '牧野之战' }
     ]
   },
   {
@@ -22,7 +22,15 @@ export default [
     title: 'Characters',
     children: [
       { path: '/characters', title: '主要封神人物' },
-      { path: '/characters/xiannu', title: '仙魔之战' }
+      { path: '/characters/jiangziya', title: '姜子牙' },
+      { path: '/characters/daji', title: '苏妲己' }
+    ]
+  },
+  {
+    id: 'artifacts',
+    title: 'Artifacts',
+    children: [
+      { path: '/artifacts', title: '法宝图鉴' }
     ]
   }
 ]
