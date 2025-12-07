@@ -32,12 +32,5 @@ export default [
     children: [
       { path: '/artifacts', title: '法宝图鉴' }
     ]
-  },
-  {
-    id: 'guestbook',
-    title: '互动区',
-    children: [
-      { path: '/guestbook', title: '留言板' }
-    ]
   }
 ]

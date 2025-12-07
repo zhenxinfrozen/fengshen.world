@@ -38,6 +38,12 @@
             </ul>
           </li>
         </ul>
+        
+        <div class="menu-extra">
+          <router-link to="/guestbook" class="direct-link">
+            <span>💬 留言板</span>
+          </router-link>
+        </div>
       </aside>
 
       <div class="main-area">
@@ -97,7 +103,11 @@ export default {
 .app-shell { display: flex; min-height: 100vh; padding-top: 64px; }
 
 /* Left navigation (wiki.js-like blue) */
-.left-nav { width: 240px; background: #1976d2; color: #fff; padding: 0px; box-sizing: border-box }
+.left-nav { width: 240px; background: #1976d2; color: #fff; padding: 0px; box-sizing: border-box; position: fixed; top: 64px; bottom: 0; left: 0; overflow-y: auto; z-index: 900; }
+.menu-extra { padding: 10px 10px; border-top: 1px solid rgba(255,255,255,0.1); margin-top: auto; }
+.direct-link { color: #eaf2ff; text-decoration: none; font-weight: 600; display: flex; align-items: center; gap: 10px; padding: 10px 12px; border-radius: 6px; }
+.direct-link:hover { background: #ba711efa; }
+.direct-link.router-link-active { background: #2c9de8e7; }
 .nav-top-buttons { display:flex; gap:10px; margin-bottom:12px; padding:10px 10px; background-color: #14599f; }
 .big-btn { display:inline-flex; align-items:center; gap:8px; background: #1976d2; border-radius:8px; padding:10px 12px; color: #fff; text-decoration:none; box-shadow: 0 2px 0 rgba(0,0,0,0.06); }
 .big-btn:hover { background: #13f0ae; }
@@ -116,7 +126,7 @@ export default {
 .group-items li { margin:6px 0; }
 
 /* Main area */
-.main-area { flex:1; display:flex; flex-direction:column; }
+.main-area { flex:1; display:flex; flex-direction:column; margin-left: 240px; }
 .topbar { height:64px; background:#0a0a0a; color:#fff; display:flex; align-items:center; justify-content:space-between; padding:0 20px; position:fixed; top:0; left:0; right:0; z-index:1000 }
 .left-spacer { height: 30px }
 .topbar .search input { background: #111; border: 1px solid #222; color:#fff; padding:8px 10px; border-radius:20px; width:420px }

@@ -1,7 +1,7 @@
 <template>
   <div class="content">
     <h1>留言板</h1>
-    <p>欢迎留下您的足迹！(目前仅为前端演示，尚未连接数据库)</p>
+    <p>欢迎留下您的足迹！</p>
 
     <!-- 留言表单 -->
     <div class="guestbook-form">
