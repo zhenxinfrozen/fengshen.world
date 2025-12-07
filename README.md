@@ -6,9 +6,9 @@
 
 项目演示（UI 预览）
 
-![fengshen UI 1](assets/img/compressed/fengshen-UI-01-cut.webp)
+![fengshen UI 1](src/assets/img/compressed/fengshen-UI-screenshot-demo01.png)
 
-![fengshen UI 2](assets/img/compressed/fengshen-UI-02.webp)
+![fengshen UI 2](src/assets/img/compressed/fengshen-UI-screenshot-demo02.png)
 
 主要特性
 
@@ -62,10 +62,10 @@ Cloudflare Pages 部署（已配置）
 ├─ src/
 │  ├─ main.js           # Vue 入口
 │  ├─ App.vue           # 主组件
-│  └─ styles.css
-└─ assets/
-	 └─ img/
-		└─ project-UI/    # 本 README 中引用的 UI 截图
+│  ├─ styles.css
+│  └─ assets/
+│     └─ img/
+│        └─ project-UI/    # 本 README 中引用的 UI 截图
 ```
 
 贡献指南
@@ -89,10 +89,10 @@ fengshen.world by rzx.me
 ```js
 // node 脚本示例：convert.js
 import sharp from 'sharp'
-await sharp('assets/img/project-UI/fengshen-UI-02.png')
+await sharp('src/assets/img/project-UI/fengshen-UI-02.png')
 	.resize(1200)
 	.webp({ quality: 80 })
-	.toFile('assets/img/project-UI/fengshen-UI-02.webp')
+	.toFile('src/assets/img/project-UI/fengshen-UI-02.webp')
 ```
 
 - 自动化（npm script）：在 `package.json` 中添加脚本，或在 CI 中运行图片压缩步骤。

@@ -1,16 +1,28 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import Home from '../pages/Home.vue'
 import Wiki from '../pages/wiki/Wiki.vue'
-import WikiRequirements from '../pages/stories/Requirements.vue'
+import Worldview from '../pages/wiki/Worldview.vue'
+import Timeline from '../pages/wiki/Timeline.vue'
 import Stories from '../pages/stories/Stories.vue'
+import Tianming from '../pages/stories/Tianming.vue'
+import Muye from '../pages/stories/Muye.vue'
 import Characters from '../pages/characters/Characters.vue'
+import JiangZiya from '../pages/characters/JiangZiya.vue'
+import Daji from '../pages/characters/Daji.vue'
+import Artifacts from '../pages/artifacts/Artifacts.vue'
 
 const routes = [
   { path: '/', name: 'Home', component: Home },
   { path: '/wiki', name: 'Wiki', component: Wiki },
-  { path: '/wiki/requirements', component: WikiRequirements },
+  { path: '/wiki/worldview', component: Worldview },
+  { path: '/wiki/timeline', component: Timeline },
   { path: '/stories', name: 'Stories', component: Stories },
-  { path: '/characters', name: 'Characters', component: Characters }
+  { path: '/stories/tianming', component: Tianming },
+  { path: '/stories/muye', component: Muye },
+  { path: '/characters', name: 'Characters', component: Characters },
+  { path: '/characters/jiangziya', component: JiangZiya },
+  { path: '/characters/daji', component: Daji },
+  { path: '/artifacts', name: 'Artifacts', component: Artifacts }
 ]
 
 const router = createRouter({
